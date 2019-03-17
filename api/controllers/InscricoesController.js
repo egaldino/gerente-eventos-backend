@@ -13,9 +13,9 @@ class InscricoesController {
 
     static addInscricao(inscricao){
         console.debug('Realizando inscricao', inscricao);
-        if(inscricao.pessoa._id != undefined){
+        if(inscricao.pessoa != undefined){
             InscricaoDAO.addInscricao(inscricao);
-            return "Inscricao de " + inscricao.pessoa.name + ' inserida com sucesso';
+            return "Inscricao de " + inscricao.pessoa + ' inserida com sucesso';
         } 
         return 'Dados da inscrição não preenchidos corretamente';
     }

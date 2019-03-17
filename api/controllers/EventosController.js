@@ -8,7 +8,7 @@ class EventosController {
     }
 
     static listarEventos(){
-        return EventoDAO.listarPessoas();
+        return EventoDAO.listarEventos();
     }
 
     static addEvento(evento){
